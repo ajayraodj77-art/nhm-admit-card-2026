@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NHM Admit Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      text-align: center;
+      border-radius: 8px;
+      width: 320px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+    }
+    button {
+      padding: 10px 25px;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+
+    <!-- LOGO will appear here -->
+    <img src="logo.png" alt="NHM Logo">
+
+    <h2>NHM Admit Card</h2>
+    <h3>Admit Card for NHM Paper</h3>
+
+    <input id="user" placeholder="User ID">
+    <input id="pass" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+  </div>
+
+<script>
+function login(){
+  if(user.value=="1839298" && pass.value=="Sapna@77"){
+    window.location="dashboard.html";
+  } else {
+    alert("Wrong User ID or Password");
+  }
+}
+</script>
+
+</body>
+</html>
